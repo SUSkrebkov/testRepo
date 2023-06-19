@@ -1,0 +1,47 @@
+body{
+    background-color: #fef6e4;
+}
+.wow{
+    margin: 10px;
+    /*border: 1px solid black;*/
+}
+.personal{
+     display: grid;
+     grid-template-areas:
+    'photo name name'
+    'photo about-me feedback';
+     grid-template-columns: 450px 1fr 1fr;
+     grid-template-rows: 100px 1fr;
+     grid-gap: 10px;
+ }
+.photo{
+    background-image: url("images/photo.jpg");
+    width: 450px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: photo;
+}
+.name{
+    color: #001858;
+    font-size: 60px;
+    font-family: "PT Sans", serif;
+    text-align: center;
+    grid-area: name;
+}
+.about-me{
+    color: #172c66;
+    font-size: 30px;
+    font-family: "PT Sans", serif;
+    text-align: center;
+    grid-area: about-me;
+    align-self: start;
+}
+.feedback{
+    color: #172c66;
+    font-size: 30px;
+    font-family: "PT Sans", serif;
+    text-align: center;
+    grid-area: feedback;
+    align-self: start;
+}
