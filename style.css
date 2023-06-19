@@ -45,3 +45,6 @@ body{
     grid-area: feedback;
     align-self: start;
 }
+.item{
+    color: red;
+}
